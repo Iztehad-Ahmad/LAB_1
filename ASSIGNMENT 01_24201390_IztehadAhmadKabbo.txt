@@ -1,0 +1,277 @@
+//Task 10
+public class Task10 {
+    public static void main(String[] args) {
+
+    /* int hungry; valid
+     * int 2AB; invalid, 2AB variable started with number
+     * int 312.2; invalid, 312.2 variable started with number
+     * int MOBILE; valid
+     * int "ANS"; invalid, "ANS" variable is quoted
+     * int $30; valid
+     * int YES/NO; invalid, YES/NO variable has assignment operator
+     * int student-id; invalid, student-id variable has assignment operator
+     * int A+3; invalid, A+3 variable has assignment operator
+     * int 'X'; invalid, 'X' variable is single quoted
+     * int return; invalid, return is a reserved keyword
+     */
+        System.out.println("int hungry; valid");
+        System.out.println("int 2AB; invalid, 2AB variable started with number");
+        System.out.println("312.2; invalid, 312.2 variable started with number");
+        System.out.println("int MOBILE; valid");
+        System.out.println("int \"ANS\"; invalid, \"ANS\" variable is quoted");
+        System.out.println("int $30; valid");
+        System.out.println("int YES/NO; invalid, YES/NO variable has assignment operator");
+        System.out.println("int student-id; invalid, student-id variable has assignment operator");
+        System.out.println("int A+3; invalid, A+3 variable has assignment operator");
+        System.out.println("int 'X'; invalid, 'X' variable is single quoted");
+        System.out.println("int return; invalid, return is a reserved keyword");
+ }
+}
+
+//Task 11(2.1)
+public class Task11 {
+    public static void main(String [] args){
+        int a=15;
+        System.out.println("Variable is: "+a);
+
+    }
+}
+
+
+//Task 11(2.2)
+
+public class Task11 {
+    public static void main(String [] args){
+        int a=15;
+        int b=3;
+        System.out.println("Sum of two numbers: " + (a+b));
+
+    }
+}
+
+
+
+
+
+
+//Task 11(2.3)
+
+public class Task11 {
+    public static void main(String [] args){
+        int a=15;
+        int b=3;
+        System.out.println("Multiplication of two number: "+(a*b));
+        System.out.println("Division of two number: "+(a/b));
+
+    }
+}
+
+
+
+
+
+
+
+//Task 11(2.4_repeat of 2.1-2.3)
+public class Task11 {
+    public static void main(String [] args){
+        double a=15.0d;
+        System.out.println("Variable is: "+a);
+        double b=3.0d;
+        System.out.println("Sum of two numbers: "+(a+b));
+        System.out.println("Multiplication of two number: "+(a*b));
+        System.out.println("Division of two number: "+(a/b));
+
+    }
+}
+
+
+//Task 11(2.5_repeat of 2.1-2.3)
+public class Task11 {
+    public static void main(String [] args){
+        double a=15d;
+        System.out.println("Variable is: "+a);
+        int b=3;
+        System.out.println("Sum of two numbers: "+(a+b));
+        System.out.println("Multiplication of two number: "+(a*b));
+        System.out.println("Division of two number: "+(a/b));
+    }
+}
+
+
+
+
+
+
+//Task 11(2.6_repeat of 2.1-2.2)
+public class Task11 {
+    public static void main(String [] args){
+        String a="Hello";
+        System.out.println("Variable is: " + a);
+        String b ="World";
+        System.out.println("Sum of two numbers: " + (a + b));
+        /*
+        * The additional operator for Strings performs concatenation(joining end-to-end)
+        */
+
+        /*
+        * First variable integer and second variable String and vice-versa
+        */
+        int a1 = 15;
+        String b1 ="fifteen";
+        System.out.println("Sum of two numbers where first variable integer and second string: " + (a1 + b1));
+        System.out.println("Sum of two numbers where first variable string and second integer: " + (b1+ a1));
+
+
+    }
+}
+
+
+
+
+//Task 12
+public class Task12 {
+    public static void main(String [] args){
+
+        int radius=4;
+        double circumference= 2*Math.PI*radius;
+        double area=Math.PI*radius*radius;
+        System.out.println("Circumference of circle: "+circumference);
+        System.out.println("Area of circle: "+area);
+
+    }
+}
+
+
+
+//TASK 13
+public class Task13{
+    public static void main(String[] args){
+        int a1=1297;
+        System.out.println("The last two digits of number: "+(a1%100));
+    }
+}
+
+
+//TASK 14
+public class Task14{
+    public static void main(String[] args){
+        double inch=1000d;
+        double conv=0.0254d;
+        System.out.println("Conversion of inch to meter: " + inch*conv);
+    }
+}
+
+
+
+//Task 15(a)
+public class Task15{
+    public static void main(String[] args){
+        int a,b,temp;
+        a=10;
+        b=5;
+        temp=10;
+        a=temp-b;
+        b+=a;
+        System.out.println("Value swap of a: " + a);
+        System.out.println("Value swap of b: " + b);
+    }
+}
+
+
+
+//Task 15(b)
+public class Task15{
+    public static void main(String[] args){
+        int a,b;
+        a=10;
+        b=5;
+        a-=b;
+        b+=a;
+        System.out.println("Value swap of a: " + a);
+        System.out.println("Value swap of b: " + b);
+    }
+}
+
+
+
+
+//Task 16
+public class Task16 {
+    public static void main(String[] args) {
+        int min=3456789;
+        int year,days;
+        year= min/(365*24*60);
+        days= (min%(365*24*60))/(24*60);
+        System.out.println(min + " minutes is approximately " + year + " years and " + days + " days.");
+
+
+
+    }
+}
+
+
+
+//Task17
+
+public class Task17 {
+    public static void main(String[] args) {
+        int a = 2;
+        int b = 5;
+        int c = 8;
+        int d = ((2 * b) * ((c - a) / 3)) + 7;
+        System.out.println("Variable d: "+d);
+
+    }
+}
+
+//Task 18
+public class Task18 {
+    public static void main(String[] args) {
+        int id=23221454;
+        int last=id%10;
+        int seclast=((id%100)/10);
+        int first6=id/100;
+        String a1=Integer.toString(last);
+        String a2=Integer.toString(seclast);
+        String a3=Integer.toString(first6);
+        System.out.println(a3+a1+a2);
+
+    }
+}
+
+
+
+//Task 19
+public class Task19 {
+    public static void main(String[] args) {
+        double a=8d;
+        double b=3d;
+        double area=((3*Math.sqrt(3))/2)*((b*b)+((a/2)*(a/2)));
+        double circumference=6*(Math.sqrt((b*b)+((a/2)*(a/2))));
+        System.out.println("Area: " + area);
+        System.out.println("Circumference: " + circumference);
+
+    }
+}
+
+//Task 20
+
+public class Task20 {
+    public static void main(String[] args) {
+        double a=4.5d;
+        double b=9.5d;
+        double c=Math.sqrt((a*a)+(b*b));
+        double SinA = (a / c);
+        double SinB = (b / c);
+        double CosA = (b / c);
+        double CosB = (a / c);
+        System.out.println("The value of SinA: " + SinA);
+        System.out.println("The value of SinB: " + SinB);
+        System.out.println("The value of CosA: " + CosA);
+        System.out.println("The value of CosB: " + CosB);
+
+    }
+}
+
+//END
